@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+::selection {
+  background-color: black;
+  color: yellow;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+  /* overflow-y: hidden; */
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to top, #8888, #e1e1e1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  z-index: 9999;
+}
+
+.burger {
+  /* display: flex;   */
+  /* justify-content: space-between; */
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: -2px;
+}
+
+.burger span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-box {
+  position: relative;
+  right: 40px;
+}
+
+.search-box input {
+  width: 212px;
+  height: 37px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  padding: 0px 19px 0px 10px;
+}
+
+.search-box i {
+  position: absolute;
+  top: 0px;
+  left: 85%;
+  width: 32px;
+  height: 37px;
+  border: 1px solid rgba(128, 128, 128, 0.468);
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c4c4c4;
+  background-color: white;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.menu-bar {
+  width: 270px;
+  height: 900px;
+  background-color: #f2eae1;
+  position: absolute;
+  text-align: center;
+  transform: translate(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-visible {
+  position: absolute;
+  transform: translate(0);
+  box-shadow:
+    5px 5px 15px #bebebe,
+    -5px -5px 15px #ffffff;
+  z-index: 999;
+}
+
+.bar-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  color: black;
+  /* text-align: center; */
+  margin-top: 18px;
+  margin-bottom: 54px;
+}
+
+.profile {
+  width: 141px;
+  height: 214px;
+  margin: auto;
+  margin-bottom: 81px;
+}
+
+.profile h3 {
+  margin-top: 60px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.profile p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #feaf00;
+  margin-top: 10px;
+}
+
+.nav {
+  width: 193px;
+  height: 486px;
+  /* background-color: chocolate; */
+  margin: auto;
+}
+
+.nav-text {
+  width: 100%;
+  height: 41px;
+  background-color: rgba(128, 128, 128, 0.221);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.nav-text:hover {
+  transform: translateX(10px);
+}
+
+.nav-link {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav-link i {
+  margin-right: 15px;
+}
+
+.menu-bar-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-bar-btn:hover {
+  color: #feaf00;
+}
+
+.main-menu {
+  width: 100%;
+  height: 900px;
+  background-color: rgb(234, 243, 255);
+  padding: 12px 30px;
+}
+
+.main-head {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11.5px;
+}
+
+.logIn-box i {
+  font-size: 1.4rem;
+  color: #feaf00;
+  cursor: pointer;
+}
+
+.logIn-box a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  padding: 14px 26.5px;
+  color: #ffffff;
+  background-color: #feaf00;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.stud-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+}
+
+.first-line {
+  color: #acacac;
+  font-weight: 600;
+  height: 40px;
+}
+
+.lines {
+  height: 85px;
+  background-color: white;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.lines i {
+  cursor: pointer;
+}
+
+.start {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.end {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tr {
+  transition: all 0.35s ease; 
+}
+
+.tr:hover {
+
+}
