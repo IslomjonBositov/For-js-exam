@@ -78,6 +78,11 @@ header {
 }
 
 .menu-bar {
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  overflow-y: auto;
   width: 270px;
   height: 900px;
   background-color: #f2eae1;
@@ -94,6 +99,11 @@ header {
     5px 5px 15px #bebebe,
     -5px -5px 15px #ffffff;
   z-index: 999;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
 }
 
 .bar-title {
@@ -173,6 +183,8 @@ header {
 }
 
 .main-menu {
+  height: auto;
+  min-height: 100vh;
   width: 100%;
   height: 900px;
   background-color: rgb(234, 243, 255);
@@ -186,6 +198,11 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 11.5px;
+}
+
+.logIn-box {
+  display: flex;
+  align-items: center;
 }
 
 .logIn-box i {
@@ -207,6 +224,7 @@ header {
 }
 
 .stud-table {
+  min-width: 900px;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0px 15px;
@@ -218,11 +236,20 @@ header {
   height: 40px;
 }
 
+.first-line th {
+  text-align: left;
+  padding: 0 20px;
+}
+
 .lines {
   height: 85px;
   background-color: white;
   padding-top: 20px;
   border-radius: 20px;
+}
+
+.lines td {
+  padding: 0 20px;
 }
 
 .lines i {
@@ -240,9 +267,84 @@ header {
 }
 
 .tr {
-  transition: all 0.35s ease; 
+  transition: all 0.35s ease;
 }
 
-.tr:hover {
+@media (max-width: 1024px) {
+  .menu-bar {
+    width: 220px;
+  }
 
+  .main-menu {
+    padding: 12px 15px;
+  }
+
+  .main-head h2 {
+    font-size: 20px;
+  }
+
+  .logIn-box a {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width:  768px){
+  header {
+    padding: 0 15px;
+  }
+
+  .search-box {
+    right: 0;
+  }
+
+  .search-box input {
+    width: 140px;
+  }
+
+  .search-box i {
+    left: 75%;
+  }
+
+  .menu-bar {
+    width: 240px;
+    z-index: 1000;
+  }
+
+  .main-head {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+
+  /* .logIn-box {
+    display: flex;
+    align-items: center;
+  } */
+
+  .logIn-box a {
+    margin-left: 10px;
+  }
+
+  .stud-table {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 480px){
+  .main-head h2 {
+    font-size: 25px;
+  }
+
+  .logIn-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logIn-box a {
+    margin-left: 0;
+  }
 }
